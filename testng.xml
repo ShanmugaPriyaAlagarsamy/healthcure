@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+    <listeners>
+        <listener class-name="utilities.ExtentReport"/>
+    </listeners>
+
+
+    <test name="ChromeTest">
+    <parameter name= "browser" value="chrome"/> 
+    <parameter name = "os" value="windows"/>
+        <classes>
+            <class name="testcases.TC001_ToVerifyMakeAppointmentButtonOnHomePage"/>
+          <class name="testcases.TC002_ToVerifyLoginWithValidCredential"/>
+            <!--   <class name="testcases.TC003_ToVerifySuccessfulAppointmentBooking"/> -->
+         </classes>
+    </test>
+
+<!--  <test name="FirefoxTest">
+    <parameter name= "browser" value="firefox"/>
+    <parameter name ="os" value="linux"/>  
+        <classes>
+            <class name="testcases.TC003_ToVerifySuccessfulAppointmentBooking"/>
+         </classes>
+    </test> -->
+
+</suite>
